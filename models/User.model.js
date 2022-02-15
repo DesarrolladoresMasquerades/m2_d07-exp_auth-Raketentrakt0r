@@ -20,8 +20,13 @@ const userSchema = new Schema(
     passwordHash: {
       type: String,
       required: [true, "Password is required."]
-    }
+    },
+    imgUrl:{
+      type:String,
+      default:"https://as2.ftcdn.net/v2/jpg/02/34/61/79/1000_F_234617921_p1AGQkGyEl8CSzwuUI74ljn6IZXqMUf2.jpg"
+    },
   },
+  
   {
     timestamps: true
   }
